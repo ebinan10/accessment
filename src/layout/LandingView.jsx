@@ -19,8 +19,18 @@ import twitter from './icons/Twitter.png'
 import instagram from './icons/Instagram.png'
 import linkled from './icons/linkled.png'
 import send from './icons/send.png'
+import mask from './images/DasBall.png'
+import dasboardA from './images/dasboardA.png'
+import dasboardB from './images/dasboardB.png'
+import dasboardC from './images/dasboardC.png'
+import dasboard from './images/DASHBOARD.jpg'
+
+import { useState } from 'react';
 
 const LandingView = () => {
+ 
+    const {data,setData} = useState()
+
   return (
     <>
     <div className='w-full flex flex-col item-center justify-center '
@@ -44,13 +54,12 @@ const LandingView = () => {
      text-base-100' >Register</Link>
    
   </div> 
-  <div className="min-w-full h-[100vh]   ">
-    <div className="w-full flex justify-end flex-row">
-    <div className="w-2/5 ml-[12vw] flex flex-col gap-3 my-auto">
+  <div className="w-full h-[100vh]   ">
+    <div className="w-full flex justify-end gap-[5vw] flex-row">
+    <div className="w-1/4  flex flex-col gap-3 my-auto">
       <img src={payroll} alt="" className='h-[15vh]'/>
        <p className='w-full'>We've built an all-inclusive simple solution for individual 
-      and Businesses to manage staff, pay salaries, bills and 
-      relevant taxes at all once
+      and Businesses to manage staff, pay salaries, bills and  relevant taxes at all once
       </p>
       <Link to='/' className='w-1/2 h-[7vh] flex justify-center items-center text-sm bg-info items-center text-center rounded-2xl text-base-100'>Start Using Free, Forever</Link>
       <p>Download the Easipay App</p>
@@ -59,9 +68,13 @@ const LandingView = () => {
         <img src={goggle} alt="" className='w-[13vw] ml-[-4vw] h-[13vh]' />
       </div>
     </div>
-  <div className="w-3/5 relative" >
-    <img src={frame} className=' ' alt="" />
-    
+  <div className="w-3/5  flex relative" >
+    <img src={mask} className='w-4/5 h-4/5'  alt="" />
+    <img src={dasboard} className='w-full h-1/2 absolute top-[15vh] left-[9vw]'  alt="" />
+    <img src={dasboardA} className='w-[20vw] h-[14vh] absolute top-[4vh] left-0'  alt="" />
+    <img src={dasboardC} className='w-[17vw] h-[14vh] absolute top-[29vh] left-[-8vw]'  alt="" />
+    <img src={dasboardB} className='w-[20vw] h-[13vh] absolute bottom-[32vh] left-[-4vw]'  alt="" />
+
     </div>
   </div></div>
   </div> 
@@ -148,7 +161,7 @@ const LandingView = () => {
          items-center text-sm text-center rounded-2xl text-base-100'> Request Demo </Link>
         </div></div>
       </div></div>
-      <div className="mt-[10vh] w-full flex justify-center items-center">
+      <div className="mt-[10vh] mb-[10vh] w-full flex justify-center items-center">
         <div className="w-3/4 flex justify-evenly gap-4 text-xs">
           <div className=" flex flex-col justify-start gap-4  items-start">
             <img src={logo} alt="" className='h-[3vh] w-[8vw] ' />
@@ -156,38 +169,38 @@ const LandingView = () => {
                 All right reserved
             </p>
             <div className="w-full flex justify-between  ">
-            <img src={instagram} alt="" className='w-5 h-5'/>
-            <img src={twitter} alt="" className='w-5 h-5'/>
-            <img src={linkled} alt="" className='w-5 h-5'/>
-            <img src={facebook} alt="" className='w-5 h-5'/>
+            <img src={instagram} alt="" className='w-5 h-5 cursor-pointer'/>
+            <img src={twitter} alt="" className='w-5 h-5 cursor-pointer'/>
+            <img src={linkled} alt="" className='w-5 h-5 cursor-pointer'/>
+            <img src={facebook} alt="" className='w-5 h-5 cursor-pointer'/>
             </div>
           </div>
           <div className=" flex flex-col  gap-4">
-          <h1>Product</h1>
-          <p>Individual</p>
-          <p>Businesses</p>
-          <p>Request Demo</p>
-          <p>Pricing</p>
+          <h1 className='font-bold text-lg'>Product</h1>
+          <p className=' cursor-pointer'>Individual</p>
+          <p className=' cursor-pointer'>Businesses</p>
+          <p className=' cursor-pointer'>Request Demo</p>
+          <p className=' cursor-pointer'>Pricing</p>
           </div>
           <div className=" flex flex-col gap-4  ">
-          <h1>Legal</h1>
-          <p>Privacy Policy</p>
-          <p>Terms of Service</p>
+          <h1 className='font-bold text-lg'>Legal</h1>
+          <p className=' cursor-pointer'>Privacy Policy</p>
+          <p className=' cursor-pointer'>Terms of Service</p>
           </div>
           <div className=" flex flex-col gap-4  ">
-          <h1>Resources</h1>
-          <p>FAQs</p>
-          <p>Blog</p>
-          <p>Career</p>
+          <h1 className='font-bold text-lg'>Resources</h1>
+          <p className=' cursor-pointer'>FAQs</p>
+          <p className=' cursor-pointer'>Blog</p>
+          <p className=' cursor-pointer'>Career</p>
           <p>Customer Stories</p>
           </div>
           <div className=" flex flex-col gap-4  ">
-          <h1>Contact</h1>
-          <p>eazipay@gmail.com</p>
-          <p>+2348168789518</p>
+          <h1 className='font-bold text-lg'>Contact</h1>
+          <p className=' cursor-pointer'>eazipay@gmail.com</p>
+          <p className=' cursor-pointer'>+2348168789518</p>
           <div className='w-full relative flex'><input type="email" placeholder='Your Email Adress' className='h-[7vh] text-xs text-info
         focus:ring-0 focus:border-info focus:border-1 rounded-2xl bg-warning border-none focus:rounded-2xl' />
-          <img src={send} alt="" className='w-5 h-5 absolute top-2 cursor-pointer right-3 ml-3'/> </div>
+          <img src={send} alt="" className='w-5 h-5 absolute top-[9px] cursor-pointer right-3 ml-7' /> </div>
           </div>
         </div>
       </div>
