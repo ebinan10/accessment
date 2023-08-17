@@ -61,7 +61,8 @@ const LandingView = () => {
        <p className='w-full'>We've built an all-inclusive simple solution for individual 
       and Businesses to manage staff, pay salaries, bills and  relevant taxes at all once
       </p>
-      <Link to='/' className='w-1/2 h-[7vh] flex justify-center items-center text-sm bg-info items-center text-center rounded-2xl text-base-100'>Start Using Free, Forever</Link>
+      <Link to='/' className='w-3/5 h-[7vh] flex justify-center items-center text-xs bg-info 
+      items-center text-center rounded-2xl text-base-100'>Start Using Free, Forever</Link>
       <p>Download the Easipay App</p>
       <div className=" flex items-start justify-start content-start">
         <img src={ios} alt="" className='w-[13vw] ml-[-2vw] h-[13vh]'/>
@@ -70,7 +71,7 @@ const LandingView = () => {
     </div>
   <div className="w-3/5  flex relative" >
     <img src={mask} className='w-4/5 h-4/5'  alt="" />
-    <img src={dasboard} className='w-full h-1/2 absolute top-[15vh] left-[9vw]'  alt="" />
+    <img src={dasboard} className='ml-[2vw] w-4/5 h-1/2 absolute top-[15vh] left-[9vw]'  alt="" />
     <img src={dasboardA} className='w-[20vw] h-[14vh] absolute top-[4vh] left-0'  alt="" />
     <img src={dasboardC} className='w-[17vw] h-[14vh] absolute top-[29vh] left-[-7vw]'  alt="" />
     <img src={dasboardB} className='w-[20vw] h-[13vh] absolute bottom-[32vh] left-[-4vw]'  alt="" />
