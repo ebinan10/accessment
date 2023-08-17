@@ -72,7 +72,7 @@ const LandingView = () => {
     <img src={mask} className='w-4/5 h-4/5'  alt="" />
     <img src={dasboard} className='w-full h-1/2 absolute top-[15vh] left-[9vw]'  alt="" />
     <img src={dasboardA} className='w-[20vw] h-[14vh] absolute top-[4vh] left-0'  alt="" />
-    <img src={dasboardC} className='w-[17vw] h-[14vh] absolute top-[29vh] left-[-8vw]'  alt="" />
+    <img src={dasboardC} className='w-[17vw] h-[14vh] absolute top-[29vh] left-[-7vw]'  alt="" />
     <img src={dasboardB} className='w-[20vw] h-[13vh] absolute bottom-[32vh] left-[-4vw]'  alt="" />
 
     </div>
@@ -90,8 +90,8 @@ const LandingView = () => {
         <h1 className='text-3xl text-info font-bold font-serif'>For Individual and Businesses</h1>
         <p className='mb-5 text-sm '>Join 200+ businesses using Easipay solutions </p>
         <img src={slide2} alt="" />
-        <p className='mt-4 text-sm'>We are happy to answer your queries. Please, reach us at <br />
-       <span className='text-warning'> hello@myeasipay.com</span> and expect our response sortly after.
+        <p className='mt-4 text-sm text-center'>We are happy to answer your queries. Please, reach us at <br />
+       <span className='text-error'> hello@myeasipay.com</span> and expect our response sortly after.
         </p>
       </div>
     </div>
