@@ -45,9 +45,10 @@ module.exports = withAnimations({
           'base-100': '#ffffff',
           info: '#2B8070',
           success: '#36D399',
-          warning: '#FBBD23',
+          warning: '#F2F1F1',
           error: '#F87272',
-          'hex':'#072B24'
+          'hex':'#072B24',
+          grey:'#F2F1F1'
         
         } 
       },
@@ -62,7 +63,8 @@ module.exports = withAnimations({
           success: '#36D399',
           warning: '#FBBD23',
           error: '#F87272',
-          'hex':'#072B24'
+          'hex':'#072B24',
+           
         }
       },
       {

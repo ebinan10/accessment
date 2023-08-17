@@ -4,8 +4,8 @@ import  logo  from './icons/logo.png';
 import payroll from './images/payroll.png';
 import gradient from './images/gradients.png';
 import frame from './images/Frame.png';
-import ios from './images/ios.png'
-import goggle from './images/gogglePlay.png'
+import ios from './icons/ios.png'
+import goggle from './icons/gogglePlay.png'
 import background2 from './images/background2.png'
 import slide2 from './images/Slide2.png'
 import bg from './images/BG.png'
@@ -14,6 +14,11 @@ import onboarding  from './images/onbrdng 2.png'
 import frame3 from './images/Frame2.png'
 import frame4 from './images/Frame4.png'
 import frame5 from './images/Frame5.png'
+import facebook from './icons/facebook.png'
+import twitter from './icons/Twitter.png'
+import instagram from './icons/Instagram.png'
+import linkled from './icons/linkled.png'
+import send from './icons/send.png'
 
 const LandingView = () => {
   return (
@@ -32,10 +37,13 @@ const LandingView = () => {
     <Link to='/'>Business</Link>
     <Link to='/'>Pricing</Link>
     <Link to='/' className='min-w-[15vw] '>Set your Payroll</Link>
-    <Link to='/' className='min-w-[11vw] h-[5vh] md:text-sm text-xs items-center text-center flex justify-center items-center text-sm text-info rounded-2xl border-info border-2'>Log in</Link>
-    <Link to='/'className='min-w-[11vw] h-[5vh] md:text-sm text-xs bg-info items-center flex justify-center items-center text-sm text-center rounded-2xl text-base-100' >Register</Link>
+    <Link to='/' className='min-w-[11vw] h-[5vh] md:text-sm text-xs items-center text-center 
+    flex justify-center items-center text-sm text-info rounded-2xl border-info border-2'>Log in</Link>
+    <Link to='/'className='min-w-[11vw] h-[5vh] md:text-sm text-xs bg-info items-center flex 
+    justify-center items-center text-sm text-center rounded-2xl
+     text-base-100' >Register</Link>
    
-  </div>
+  </div> 
   <div className="min-w-full h-[100vh]   ">
     <div className="w-full flex justify-end flex-row">
     <div className="w-2/5 ml-[12vw] flex flex-col gap-3 my-auto">
@@ -100,42 +108,89 @@ const LandingView = () => {
     }}>
 
       </div>
-      <div className="w-full flex justify-center items-center"
+      <div className=" w-full shadow flex justify-center items-center"
       style={{
         backgroundImage: `url(${frame4})`,
         backgroundRepeat: 'no-repeat', 
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
-        height:'100vh'
+        height:'120vh'
       }}>
       <div className="w-1/2 flex justify-end items-center ml-[8vh]" >
         <img src={frame5} alt="" className=' w-3/4 flex justify-end items-end h-1/2 '/>
       </div>
       <div className="w-1/2  ">
-        <div className="w-3/4 flex justify-center items-center h-[90vh] shadow-2xl bg-base-100">
+        <div className="w-3/4 flex justify-center items-center h-[90vh] rounded-xl shadow-2xl bg-base-100">
         <div className="w-4/5 flex text-center justify-center flex-col gap-3  ">
-        <h1 className='font-bold text-lg'>First tings first</h1>
-        <p>We want to serve you better. Tell us a bit <br />
+        <h1 className='font-bold text-2xl'>First things first</h1>
+        <p className='text-sm'>We want to serve you better. Tell us a bit <br />
             about yourself or company
         </p>
-        <div className="w-full flex justify-evenly items-center border rounded-xl h-[7vh]">
-        <Link to='/'className='w-2/5 h-[5vh] md:text-sm text-xs bg-info 
+        <div className="w-full flex justify-evenly items-center shadow rounded-lg h-[7vh]">
+        <Link to='/'className='w-2/5 h-[5vh] md:text-sm text-xs bg-info shadow-lg
         items-center flex justify-center items-center text-sm text-center 
         rounded-2xl text-base-100' >Individual</Link>
-        <Link to='/' className='w-2/5 h-[5vh] md:text-sm text-xs items-center text-center flex 
-        justify-center items-center text-sm text-info rounded-2xl border-info 
-        border-2'>Company</Link>
+        <Link to='/' className='w-2/5 h-[5vh] bg-warning md:text-sm text-xs items-center text-center flex 
+        justify-center items-center text-sm text-info rounded-2xl  '>Company</Link> 
         
-        </div>
+        </div> 
         <input type="text" placeholder='First Name' value='' className='h-[7vh] text-xs text-info
-        focus:ring-0 focus:border-info focus:border-1 rounded-lg border-info border-1 focus:rounded-lg ' onChange={()=>{}} />
-        <input type="text" placeholder='Last Name' value='' onChange={()=>{}} />
-        <input type="text" placeholder='Email' value='' onChange={()=>{}} />
-        <input type="text" placeholder='Job Title' value='' onChange={()=>{}} />
-        <input type="text" placeholder='Company Size' value='' onChange={()=>{}} />
-        <button ></button>
+        focus:ring-0 focus:border-info focus:border-1 rounded-2xl border-info border-1 focus:rounded-2xl ' onChange={()=>{}} />
+        <input type="text" placeholder='Last Name' value='' className='h-[7vh] text-xs text-info
+        focus:ring-0 focus:border-info focus:border-1 rounded-2xl border-info border-1 focus:rounded-2xl ' onChange={()=>{}} />
+        <input type="text" placeholder='Email' value='' className='h-[7vh] text-xs text-info
+        focus:ring-0 focus:border-info focus:border-1 rounded-2xl border-info border-1 focus:rounded-2xl ' onChange={()=>{}} />
+        <input type="text" placeholder='Job Title' value='' className='h-[7vh] text-xs text-info
+        focus:ring-0 focus:border-info focus:border-1 rounded-2xl border-info border-1 focus:rounded-2xl ' onChange={()=>{}} />
+        <input type="text" placeholder='Company Size' value='' className='h-[7vh] text-xs text-info
+        focus:ring-0 focus:border-info focus:border-1 rounded-2xl border-info border-1 focus:rounded-2xl ' onChange={()=>{}} />
+        <Link to='' className='w-full h-[7vh] md:text-sm text-xs bg-info items-center flex justify-center
+         items-center text-sm text-center rounded-2xl text-base-100'> Request Demo </Link>
         </div></div>
       </div></div>
+      <div className="mt-[10vh] w-full flex justify-center items-center">
+        <div className="w-3/4 flex justify-evenly gap-4 text-xs">
+          <div className=" flex flex-col justify-start gap-4  items-start">
+            <img src={logo} alt="" className='h-[3vh] w-[8vw] ' />
+            <p>Copyright &copy; 2023 Eazipay. <br />
+                All right reserved
+            </p>
+            <div className="w-full flex justify-between  ">
+            <img src={instagram} alt="" className='w-5 h-5'/>
+            <img src={twitter} alt="" className='w-5 h-5'/>
+            <img src={linkled} alt="" className='w-5 h-5'/>
+            <img src={facebook} alt="" className='w-5 h-5'/>
+            </div>
+          </div>
+          <div className=" flex flex-col  gap-4">
+          <h1>Product</h1>
+          <p>Individual</p>
+          <p>Businesses</p>
+          <p>Request Demo</p>
+          <p>Pricing</p>
+          </div>
+          <div className=" flex flex-col gap-4  ">
+          <h1>Legal</h1>
+          <p>Privacy Policy</p>
+          <p>Terms of Service</p>
+          </div>
+          <div className=" flex flex-col gap-4  ">
+          <h1>Resources</h1>
+          <p>FAQs</p>
+          <p>Blog</p>
+          <p>Career</p>
+          <p>Customer Stories</p>
+          </div>
+          <div className=" flex flex-col gap-4  ">
+          <h1>Contact</h1>
+          <p>eazipay@gmail.com</p>
+          <p>+2348168789518</p>
+          <div className='w-full relative flex'><input type="email" placeholder='Your Email Adress' className='h-[7vh] text-xs text-info
+        focus:ring-0 focus:border-info focus:border-1 rounded-2xl bg-warning border-none focus:rounded-2xl' />
+          <img src={send} alt="" className='w-5 h-5 absolute top-2 cursor-pointer right-3 ml-3'/> </div>
+          </div>
+        </div>
+      </div>
   </>
   )
 }
