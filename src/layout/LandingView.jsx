@@ -12,6 +12,8 @@ import bg from './images/BG.png'
 import frame2 from './images/1@3x.png'
 import onboarding  from './images/onbrdng 2.png'
 import frame3 from './images/Frame2.png'
+import frameD from './images/FrameD.png'
+import frameEx from './images/FrameEx.png'
 import frame4 from './images/Frame4.png'
 import frame5 from './images/Frame5.png'
 import facebook from './icons/facebook.png'
@@ -116,15 +118,28 @@ const LandingView = () => {
       </div>
       </div>
       
-      <div className="w-full"
+      <div className="w-full flex justify-center items-center"
       style={{
-      backgroundImage: `url(${frame3})`,
+      backgroundImage: `url(${frameD})`,
       backgroundRepeat: 'no-repeat', 
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
       height:'100vh'
     }}>
-
+      <div className="w-3/4 h-full flex justify-center items-center">
+        <div className=" w-1/2 h-full flex flex-col justify-center ">
+          <p className='text-2xl font-bold font-serif'>Free forever <br />
+          for your <span className='text-error'> salary <br /> payment</span>
+          </p>
+          <p className='text-sm mt-3'> Subscribe to the Easilife today</p>
+          <div className="w-full flex">
+        <img src={ios} alt="" className='w-[15vw] ml-[-3vw] h-[15vh] cursor-pointer'/>
+        <img src={goggle} alt="" className='w-[15vw] ml-[-4vw] h-[15vh] cursor-pointer' />
+          </div>
+        </div>
+        <div className="w-3/4">
+        <img src={frameEx} alt="" className='w-full h-3/4' />
+      </div></div>
       </div>
       <div className=" w-full shadow flex justify-center items-center"
       style={{
