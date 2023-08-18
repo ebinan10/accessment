@@ -71,8 +71,8 @@ const LandingView = () => {
       items-center text-center rounded-2xl text-base-100'>Start Using Free, Forever</Link>
       <p>Download the Easipay App</p>
       <div className=" flex items-start justify-start content-start">
-        <img src={ios} alt="" className='w-[13vw] ml-[-2vw] h-[13vh]'/>
-        <img src={goggle} alt="" className='w-[13vw] ml-[-4vw] h-[13vh]' />
+        <img src={ios} alt="" className='w-[13vw] ml-[-2vw] h-[13vh] cursor-pointer'/>
+        <img src={goggle} alt="" className='w-[13vw] ml-[-4vw] h-[13vh] cursor-pointer' />
       </div>
     </div>
   <div className="w-3/5  flex relative" >
@@ -112,7 +112,7 @@ const LandingView = () => {
           <img src={bg} alt="" className='mt-[10vh] h-[60vh]' />
           <img src={onboarding} alt="" className='w-1/2 h-[80vh] absolute top-0 left-[5vw]'/>
           </div>
-          <div className="w-1/2 mb-[30vh]">
+          <div className="w-1/2 mb-[30vh] ml-[10vw]">
             <img src={frame2} alt="" className='w-3/4 h-[70vh]'/>
           </div>
       </div>
@@ -128,7 +128,7 @@ const LandingView = () => {
     }}>
       <div className="w-3/4 h-full flex justify-center items-center">
         <div className=" w-1/2 h-full flex flex-col justify-center ">
-          <p className='text-2xl font-bold font-serif'>Free forever <br />
+          <p className='text-3xl font-bold font-serif'>Free forever <br />
           for your <span className='text-error'> salary <br /> payment</span>
           </p>
           <p className='text-xs mt-7 mb-[-1vh]'> Subscribe to the Easilife today</p>
@@ -153,7 +153,7 @@ const LandingView = () => {
         <img src={frame5} alt="" className=' w-3/4 flex justify-end items-end h-1/2 '/>
       </div>
       <div className="w-1/2  ">
-        <div className="w-3/4 flex justify-center items-center h-[90vh] rounded-xl shadow-2xl bg-base-100">
+        <div className="w-3/4 flex justify-center items-center h-[90vh] rounded-xl shadow-xl bg-base-100">
         <div className="w-4/5 flex text-center justify-center flex-col gap-3  ">
         <h1 className='font-bold text-2xl'>First things first</h1>
         <p className='text-sm'>We want to serve you better. Tell us a bit <br />
