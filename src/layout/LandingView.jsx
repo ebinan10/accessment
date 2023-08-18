@@ -131,14 +131,14 @@ const LandingView = () => {
           <p className='text-2xl font-bold font-serif'>Free forever <br />
           for your <span className='text-error'> salary <br /> payment</span>
           </p>
-          <p className='text-sm mt-3'> Subscribe to the Easilife today</p>
+          <p className='text-xs mt-7 mb-[-1vh]'> Subscribe to the Easilife today</p>
           <div className="w-full flex">
-        <img src={ios} alt="" className='w-[15vw] ml-[-3vw] h-[15vh] cursor-pointer'/>
-        <img src={goggle} alt="" className='w-[15vw] ml-[-4vw] h-[15vh] cursor-pointer' />
+        <img src={ios} alt="" className='w-[15vw] ml-[-3vw] h-[16vh] cursor-pointer'/>
+        <img src={goggle} alt="" className='w-[15vw] ml-[-4vw] h-[16vh] cursor-pointer' />
           </div>
         </div>
         <div className="w-3/4">
-        <img src={frameEx} alt="" className='w-full h-3/4' />
+        <img src={frameEx} alt="" className='w-full h-full' />
       </div></div>
       </div>
       <div className=" w-full shadow flex justify-center items-center"
