@@ -40,7 +40,7 @@ module.exports = withAnimations({
         light: {
           primary: '#008753',
           secondary: '#CF916D',
-          accent: '#07AA3D',
+          accent: '#D9EBCD',
           neutral: '#25373F',
           'base-100': '#ffffff',
           info: '#2B8070',
@@ -56,7 +56,7 @@ module.exports = withAnimations({
         heroBlack: {
           primary: '#25373F',
           secondary: '#CF916D',
-          accent: '#07AA3D',
+          accent: '#D9EBCD',
           neutral: '#ffffff',
           'base-100': '#ffffff',
           info: '#2B8070',
@@ -71,7 +71,7 @@ module.exports = withAnimations({
         heroWhite: {
           primary: '#ffffff',
           secondary: '#CF916D',
-          accent: '#07AA3D',
+          accent: '#D9EBCD',
           neutral: '#25373F',
           'base-100': '#008753',
           info: '#2B8070',
