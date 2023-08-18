@@ -29,7 +29,11 @@ import { useState } from 'react';
 
 const LandingView = () => {
  
-    const {data,setData} = useState()
+    const [data,setData] = useState({first:'',last:'',email:'',title:'',size:''})
+
+    const ReturnValue = (event) =>{
+      setData({ ...data, [event.target.name]: event.target.value })
+    }
 
   return (
     <>
@@ -41,16 +45,16 @@ const LandingView = () => {
       backgroundPosition: 'center',
       
     }}>
-      <div className="w-4/5 flex h-[15vh] md:text-sm text-xs justify-center gap-9 mx-auto mt-7">
+      <div className="w-4/5 flex h-[15vh] items-center text-xs justify-center gap-9 mx-auto ">
     <img src={logo} alt="alt" className='w-[7vw] h-[4vh]' />
     <Link to='/'>Individual</Link>
     <Link to='/'>Business</Link>
     <Link to='/'>Pricing</Link>
     <Link to='/' className='min-w-[15vw] '>Set your Payroll</Link>
-    <Link to='/' className='min-w-[11vw] h-[5vh] md:text-sm text-xs items-center text-center 
+    <Link to='/' className='min-w-[11vw] h-[5vh]  text-xs items-center text-center 
     flex justify-center items-center text-sm text-info rounded-2xl border-info border-2'>Log in</Link>
-    <Link to='/'className='min-w-[11vw] h-[5vh] md:text-sm text-xs bg-info items-center flex 
-    justify-center items-center text-sm text-center rounded-2xl
+    <Link to='/'className='min-w-[11vw] h-[5vh]  text-xs bg-info items-center flex 
+    justify-center items-center  text-center rounded-2xl
      text-base-100' >Register</Link>
    
   </div> 
@@ -70,11 +74,11 @@ const LandingView = () => {
       </div>
     </div>
   <div className="w-3/5  flex relative" >
-    <img src={mask} className='w-4/5 h-4/5'  alt="" />
+    <img src={mask} className='ml-[2vw] w-4/5 h-4/5'  alt="" />
     <img src={dasboard} className='ml-[2vw] w-4/5 h-1/2 absolute top-[15vh] left-[9vw]'  alt="" />
-    <img src={dasboardA} className='w-[20vw] h-[14vh] absolute top-[4vh] left-0'  alt="" />
-    <img src={dasboardC} className='w-[17vw] h-[14vh] absolute top-[29vh] left-[-7vw]'  alt="" />
-    <img src={dasboardB} className='w-[20vw] h-[13vh] absolute bottom-[32vh] left-[-4vw]'  alt="" />
+    <img src={dasboardA} className='w-[20vw] h-[14vh] absolute top-[4vh] left-[3vw]'  alt="" />
+    <img src={dasboardC} className='w-[17vw] h-[14vh] absolute top-[29vh] left-[-4vw]'  alt="" />
+    <img src={dasboardB} className='w-[20vw] h-[13vh] absolute bottom-[32vh] left-[-1vw]'  alt="" />
 
     </div>
   </div></div>
@@ -92,7 +96,7 @@ const LandingView = () => {
         <p className='mb-5 text-sm '>Join 200+ businesses using Easipay solutions </p>
         <img src={slide2} alt="" />
         <p className='mt-4 text-sm text-center'>We are happy to answer your queries. Please, reach us at <br />
-       <span className='text-error'> hello@myeasipay.com</span> and expect our response sortly after.
+       <span className='text-error cursor-pointer'> hello@myeasipay.com</span> and expect our response sortly after.
         </p>
       </div>
     </div>
@@ -148,20 +152,20 @@ const LandingView = () => {
         justify-center items-center text-sm text-info rounded-2xl  '>Company</Link> 
         
         </div> 
-        <input type="text" placeholder='First Name' value='' className='h-[7vh] text-xs text-info
-        focus:ring-0 focus:border-info focus:border-1 rounded-2xl border-info border-1 focus:rounded-2xl ' onChange={()=>{}} />
-        <input type="text" placeholder='Last Name' value='' className='h-[7vh] text-xs text-info
-        focus:ring-0 focus:border-info focus:border-1 rounded-2xl border-info border-1 focus:rounded-2xl ' onChange={()=>{}} />
-        <input type="text" placeholder='Email' value='' className='h-[7vh] text-xs text-info
-        focus:ring-0 focus:border-info focus:border-1 rounded-2xl border-info border-1 focus:rounded-2xl ' onChange={()=>{}} />
-        <input type="text" placeholder='Job Title' value='' className='h-[7vh] text-xs text-info
-        focus:ring-0 focus:border-info focus:border-1 rounded-2xl border-info border-1 focus:rounded-2xl ' onChange={()=>{}} />
-        <input type="text" placeholder='Company Size' value='' className='h-[7vh] text-xs text-info
-        focus:ring-0 focus:border-info focus:border-1 rounded-2xl border-info border-1 focus:rounded-2xl ' onChange={()=>{}} />
+        <input type="text" placeholder='First Name' name='first' value={data.first} className='h-[7vh] text-xs text-info
+        focus:ring-0 focus:border-info focus:border-1 rounded-2xl border-info border-1 focus:rounded-2xl ' onChange={ReturnValue} />
+        <input type="text" placeholder='Last Name' name='last' value={data.last} className='h-[7vh] text-xs text-info
+        focus:ring-0 focus:border-info focus:border-1 rounded-2xl border-info border-1 focus:rounded-2xl ' onChange={ReturnValue} />
+        <input type="text" placeholder='Email' name='email' required value={data.email} className='h-[7vh] text-xs text-info
+        focus:ring-0 focus:border-info focus:border-1 rounded-2xl border-info border-1 focus:rounded-2xl ' onChange={ReturnValue} />
+        <input type="text" placeholder='Job Title' name='title' value={data.title} className='h-[7vh] text-xs text-info
+        focus:ring-0 focus:border-info focus:border-1 rounded-2xl border-info border-1 focus:rounded-2xl ' onChange={ReturnValue} />
+        <input type="text" placeholder='Company Size' name='size' value={data.size} className='h-[7vh] text-xs text-info
+        focus:ring-0 focus:border-info focus:border-1 rounded-2xl border-info border-1 focus:rounded-2xl ' onChange={ReturnValue} />
         <Link to='' className='w-full h-[7vh] md:text-sm text-xs bg-info items-center flex justify-center
          items-center text-sm text-center rounded-2xl text-base-100'> Request Demo </Link>
         </div></div>
-      </div></div>
+      </div></div> 
       <div className="mt-[10vh] mb-[10vh] w-full flex justify-center items-center">
         <div className="w-3/4 flex justify-evenly gap-4 text-xs">
           <div className=" flex flex-col justify-start gap-4  items-start">
